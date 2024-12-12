@@ -2,7 +2,7 @@
 	<header>
 		<nav
 			id="navbar"
-			class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
+			class="fixed inset-x-0 z-20 w-full border-b border-coffee-400 bg-coffee-300/80 backdrop-blur-md dark:border-gray-700/30 dark:bg-gray-900/80"
 		>
 			<div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
 				<div
@@ -75,65 +75,34 @@
 						id="navlinks"
 						class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent"
 					>
-						<div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+						<div class="text-coffee-900 dark:text-gray-300 lg:pr-4">
 							<ul
-								class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm"
+								class="space-y-6 text-lg font-semibold tracking-wide lg:flex lg:space-y-0 lg:text-sm"
 							>
-								<li>
+								<li v-for="link in links" :key="link.href">
 									<a
-										href="./pages/solution.html"
-										class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4"
+										:href="link.href"
+										class="block transition transform hover:scale-105 hover:text-purple-900 dark:hover:text-white md:px-4"
 									>
-										<span>Solution</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="./pages/customers.html"
-										class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4"
-									>
-										<span>Customers</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="./pages/pricing.html"
-										class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4"
-									>
-										<span>Pricing</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="./pages/blog.html"
-										class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4"
-									>
-										<span>Blog</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="./pages/about.html"
-										class="block transition hover:text-primary dark:hover:text-primaryLight md:px-4"
-									>
-										<span>Company</span>
+										<span>{{ link.text }}</span>
 									</a>
 								</li>
 							</ul>
 						</div>
 
 						<div
-							class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6"
+							class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-purple-500/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6"
 						>
-							<a
-								href="./pages/contact.html"
-								class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800"
+							<NuxtLink
+								to="/register"
+								class="group relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800"
 							>
 								<span
-									class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-primary lg:dark:text-white"
-									>Get started</span
+									class="relative text-sm font-semibold group-hover:text-purple-900 text-gray-600 dark:text-gray-900 lg:text-primary lg:dark:text-white"
 								>
-							</a>
+									{{ register }}
+								</span>
+							</NuxtLink>
 						</div>
 						<button
 							aria-label="switch theme"
@@ -197,3 +166,7 @@
 		</nav>
 	</header>
 </template>
+<script setup lang="ts">
+import type { Link } from "~/types/html";
+const props = defineProps<{ links: Link[]; register: string }>();
+</script>

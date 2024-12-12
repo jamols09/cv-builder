@@ -1,21 +1,44 @@
 <template>
 	<div class="flex flex-col min-h-screen">
-		<Header />
-		<main class="flex-grow p-6 w-full max-w-7xl mx-auto">
-			<p>Some default layout content shared across all pages</p>
+		<Header :links="links" :register="register" />
+		<main class="flex-grow w-full mx-auto">
 			<slot />
-
-			BOBO KA NA STALKER
 		</main>
 		<Footer />
 	</div>
 </template>
 
-<script setup>
-import Header from "~/components/header.vue";
-import Footer from "~/components/footer.vue";
-</script>
+<script setup lang="ts">
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
+const links = [
+	{
+		text: "Home",
+		href: "/",
+	},
+	{
+		text: "About",
+		href: "/about",
+	},
+	{
+		text: "Contact",
+		href: "/contact",
+	},
+];
+
+const register = ref("Get Started");
+
+const { isLoggedIn } = useAuth();
+
+if (isLoggedIn()) {
+	register.value = "Get Started";
+} else {
+	register.value = "Sign In";
+}
+</script>
 <style scoped>
-/* Add any additional styles here if needed */
+body {
+	font-family: "Urbanist", sans-serif;
+}
 </style>

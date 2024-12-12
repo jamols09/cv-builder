@@ -3,12 +3,12 @@ import { ref } from "vue";
 
 export function useAuth() {
 	const user = ref<Form | null>(null);
-    const sessionToken = useCookie("session");
+	const sessionToken = useCookie("session");
 
-    // Check if the user is logged in
-    const isLoggedIn = () => {
-        return sessionToken.value !== null;
-    };
+	// Check if the user is logged in
+	const isLoggedIn = () => {
+		return sessionToken.value !== null;
+	};
 
 	/**
 	 * Registers a new user.
@@ -64,7 +64,7 @@ export function useAuth() {
 
 	return {
 		user,
-        isLoggedIn,
+		isLoggedIn,
 		register,
 		update,
 	};

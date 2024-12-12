@@ -39,7 +39,7 @@ const props = defineProps<{
 	title: Input;
 	subtitle: Input;
 	error: string | null;
-    button: Input;
+	button: Input;
 }>();
 const emits = defineEmits(["submit"]);
 

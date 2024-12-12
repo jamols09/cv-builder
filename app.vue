@@ -15,6 +15,6 @@ const layout = computed(() => {
 </template>
 <style>
 body {
-	background-color: rgb(15, 23, 42);
+	background-color: #DAC0A3;
 }
 </style>
