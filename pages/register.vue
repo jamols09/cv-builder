@@ -4,11 +4,11 @@
 		<h2 class="text-4xl font-bold text-blue-600 mb-4">
 			Welcome to Resume Builder
 		</h2>
-		<p class="text-lg text-gray-200 mb-2">
+		<p class="text-lg text-coffeee-900 mb-2">
 			Create your own professional Resume with the help of AI.
 		</p>
-		<p class="text-lg text-gray-200 mb-2">Generate with ease.</p>
-		<p class="text-lg text-gray-200">
+		<p class="text-lg text-coffeee-900 mb-2">Generate with ease.</p>
+		<p class="text-lg text-coffeee-900">
 			Find tips and best practices for building a standout resume.
 		</p>
 	</div>

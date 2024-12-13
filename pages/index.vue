@@ -19,6 +19,7 @@ import {
 	headlineEmail,
 	cardsFeature,
 	trialNotice,
+	reviews,
 } from "~/seo/landingpage.json";
 
 // Set Meta tags
@@ -62,7 +63,11 @@ const sections = [
 	},
 	{
 		component: LandingReviews,
-		props: {},
+		props: {
+			title: reviews.title,
+			subtitle1: reviews.subtitle1,
+			subtitle2: reviews.subtitle2,
+		},
 	},
 ];
 </script>

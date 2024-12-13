@@ -11,16 +11,17 @@
 				<h2
 					class="font-bold text-3xl tracking-tight text-coffee-900 sm:text-4xl"
 				>
-					CV Expresso Reviews
+					{{ title }}
 				</h2>
 				<div
 					itemprop="aggregateRating"
 					itemtype="https://schema.org/AggregateRating"
 				>
-					<p class="mt-4 text-lg tracking-tight text-coffee-900">
-						Rated <span itemprop="ratingValue">4.9</span> out of
-						<span itemprop="bestRating">5 </span>• Excellent
-					</p>
+					<p
+						v-html="subtitle1"
+						class="mt-4 text-lg tracking-tight text-coffee-900"
+					></p>
+
 					<div class="mt-2 flex justify-center">
 						<div class="flex items-center">
 							<svg
@@ -90,18 +91,7 @@
 							</svg>
 						</div>
 					</div>
-					<p class="mt-4 text-sm text-coffee-900">
-						Based on <span itemprop="ratingCount">186</span>
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="Reviews"
-							href="https://uk.trustpilot.com/review/cvtemplate.co.uk"
-						>
-							Trustpilot
-						</a>
-						reviews
-					</p>
+					<p class="mt-4 text-md text-coffee-900" v-html="subtitle2"></p>
 				</div>
 				<div itemprop="offers" itemtype="https://schema.org/Offer">
 					<meta itemprop="price" content="0" />
@@ -110,3 +100,10 @@
 		</div>
 	</section>
 </template>
+<script setup lang="ts">
+defineProps({
+	title: String,
+	subtitle1: String,
+	subtitle2: String,
+});
+</script>

@@ -77,7 +77,7 @@
 					>
 						<div class="text-coffee-900 dark:text-gray-300 lg:pr-4">
 							<ul
-								class="space-y-6 text-lg font-semibold tracking-wide lg:flex lg:space-y-0 lg:text-sm"
+								class="space-y-6 text-lg font-semibold tracking-wide lg:flex lg:space-y-0 lg:text-md"
 							>
 								<li v-for="link in links" :key="link.href">
 									<a

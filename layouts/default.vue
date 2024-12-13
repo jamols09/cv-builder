@@ -21,10 +21,6 @@ const links = [
 		text: "About",
 		href: "/about",
 	},
-	{
-		text: "Contact",
-		href: "/contact",
-	},
 ];
 
 const register = ref("Get Started");

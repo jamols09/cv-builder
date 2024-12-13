@@ -28,9 +28,14 @@
 			}
 		]
 	},
-    "trialNotice": {    
-        "title": "Free for 3 days",
-        "subtitle": "Our free trial gives you full access to our templates, and sharing features, so you can create a standout CV and apply for your dream job with confidence.",
-        "button": "Start Free Trial"
-    }
+	"trialNotice": {
+		"title": "Free for 3 days",
+		"subtitle": "Our free trial gives you full access to our templates, and sharing features, so you can create a standout CV and apply for your dream job with confidence.",
+		"button": "Start Free Trial"
+	},
+	"reviews": {
+		"title": "CV Expresso Reviews",
+		"subtitle1": "Rated <span itemprop=\"ratingValue\">4.9</span> out of <span itemprop=\"bestRating\">5</span> • Excellent",
+		"subtitle2": "Based on <span itemprop=\"ratingCount\">186</span> <a target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Reviews\" href=\"https://uk.trustpilot.com/review/cvtemplate.co.uk\" class=\"text-coffee-900 font-bold\">Trustpilot</a> reviews"
+	}
 }
