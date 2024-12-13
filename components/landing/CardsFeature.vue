@@ -1,5 +1,5 @@
 <template>
-	<section class="relative py-32 bg-[#e9b479]">
+	<section class="relative py-32">
 		<div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
 			<div class="text-center">
 				<h2
