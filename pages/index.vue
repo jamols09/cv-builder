@@ -15,7 +15,11 @@ import {
 	LandingReviews,
 	LandingTrialNotice,
 } from "#components";
-import { headlineEmail, cardsFeature } from "~/seo/landingpage.json";
+import {
+	headlineEmail,
+	cardsFeature,
+	trialNotice,
+} from "~/seo/landingpage.json";
 
 // Set Meta tags
 useHead({
@@ -42,7 +46,11 @@ const sections = [
 	},
 	{
 		component: LandingTrialNotice,
-		props: {},
+		props: {
+			title: trialNotice.title,
+			subtitle: trialNotice.subtitle,
+			button: trialNotice.button,
+		},
 	},
 	{
 		component: LandingCardsFeature,

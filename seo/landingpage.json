@@ -27,5 +27,10 @@
 				"description": "Easily share your CV or resume via a link. You can also send your generated CV or application letter through email, making it convenient to apply for jobs and share your professional documents."
 			}
 		]
-	}
+	},
+    "trialNotice": {    
+        "title": "Free for 3 days",
+        "subtitle": "Our free trial gives you full access to our templates, and sharing features, so you can create a standout CV and apply for your dream job with confidence.",
+        "button": "Start Free Trial"
+    }
 }

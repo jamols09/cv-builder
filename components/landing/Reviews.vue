@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="reviews"
-		class="relative overflow-hidden py-16 md:py-24 "
+		class="relative overflow-hidden py-16 md:py-24 bg-[#e9b479]"
 	>
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
 			<div
