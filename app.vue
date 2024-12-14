@@ -5,6 +5,11 @@ const layout = computed(() => {
 	if (route.path.startsWith("/login") || route.path.startsWith("/register")) {
 		return "login";
 	}
+
+	if (route.path.startsWith("/dashboard")) {
+		return "dashboard";
+	}
+
 	return "default";
 });
 </script>
@@ -15,6 +20,6 @@ const layout = computed(() => {
 </template>
 <style>
 body {
-	background-color: #DAC0A3;
+	background-color: #dac0a3;
 }
 </style>
