@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 		"@nuxtjs/google-fonts",
 		"floating-vue/nuxt",
 		"@nuxt/image",
+		"@vueuse/nuxt",
 	],
 
 	// Custom TailwindCSS configuration

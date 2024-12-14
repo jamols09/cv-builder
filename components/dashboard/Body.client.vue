@@ -6,7 +6,7 @@
 			<div class="flex flex-col flex-grow border-blue-900 h-full my-4">
 				<!-- First Div -->
 				<div class="flex-1 p-4 md:p-12">
-					<CurriculumVit />
+					<CurriculumVit title="Curriculum Vitae"/>
 				</div>
 				<!-- Second Div -->
 				<div class="flex-1 p-4 md:p-12 h-full">
@@ -18,9 +18,9 @@
 </template>
 
 <script lang="ts" setup>
-import Cards from "./Cards.vue";
-import CoverLetter from "./CoverLetter.vue";
-import CurriculumVit from "./CurriculumVit.vue";
+import CurriculumVit from './CurriculumVit.vue';
+import CoverLetter from './CoverLetter.vue';
+
 </script>
 
 <style scoped>
