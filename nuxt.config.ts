@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
-	modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts"],
+	modules: [
+		"@nuxtjs/tailwindcss",
+		"@nuxtjs/google-fonts",
+		"floating-vue/nuxt",
+		"@nuxt/image",
+	],
 
 	// Custom TailwindCSS configuration
 	tailwindcss: {

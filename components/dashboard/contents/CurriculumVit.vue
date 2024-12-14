@@ -16,21 +16,6 @@
 		class="flex flex-wrap justify-center sm:justify-start gap-16 mt-4 mx-12 overflow-y-auto h-[28rem]"
 	>
 		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<Cards />
-		<!-- Add more cards as needed -->
 	</div>
 </template>
 <script lang="ts" setup>

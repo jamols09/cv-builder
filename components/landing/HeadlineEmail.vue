@@ -48,7 +48,7 @@
 								aria-label="your email"
 								autocomplete="email"
 								:placeholder="placeholder"
-								class="w-full rounded-full tracking-wider bg-transparent p-4 placeholder-gray-600 outline-none dark:placeholder-white"
+								class="w-full rounded-full tracking-wider bg-transparent p-4 placeholder-coffee-900 outline-none dark:placeholder-white"
 								type="email"
 							/>
 							<div class="md:pr-1.5 lg:pr-0">
